@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--========== CSS ==========-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+
+
+    <title>CDF</title>
+</head>
+
+<body>
+    <!--- HEADER --->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__img">
+                <div class="dropdown">
+                    <a class="account">
+                        <p class="name">Gisela Nonis<br><span>SuperAdmin</span></p>
+                        <i class='bx bxs-user-circle header__user'></i>
+                        <i class='bx bx-chevron-down header__chevrhon'></i>
+                    </a>
+
+                    <div class="dropdown__singout" id="singount">
+                        <ul>
+                            <li><a href="#"><i class='bx bx-log-out bx__logout'></i>
+                                    Cerrar sesión
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="header__logo">CDF</a>
+
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+        </div>
+    </header>
+
+    <!--- NAV BAR --->
+    <div class="nav" id="navbar">
+        <nav class="nav__container">
+            <div>
+                <a href="#" class="nav__link nav__logo">
+                    <i class='bx bxs-disc nav__icon'></i>
+                    <span class="nav__logo-name">CDF</span>
+                </a>
+
+                <div class="nav__list">
+                    <div class="nav__items">
+                        <h3 class="nav__subtitle">Acceso rapido</h3>
+
+                        <a href="#" class="nav__link active">
+                            <i class='bx bx-home nav__icon'></i>
+                            <span class="nav__name">Home</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+
+                            <i class='bx bx-aperture nav__icon'></i>
+                            <span class="nav__name">Cubiertas</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-cabinet nav__icon'></i>
+                            <span class="nav__name">Historial de Mov</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-bus nav__icon'></i>
+                            <span class="nav__name">Mov en Camión</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-transfer nav__icon'></i>
+                            <span class="nav__name">Mov en Stock</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-wrench nav__icon'></i>
+                            <span class="nav__name">Servicios</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-list-check nav__icon'></i>
+                            <span class="nav__name">Stock</span>
+                        </a>
+                    </div>
+
+                    <div class="nav__items">
+                        <h3 class="nav__subtitle">Menú</h3>
+
+                        <div class="nav__dropdown">
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-aperture nav__icon'></i>
+                                <span class="nav__name">Cubiertas</span>
+                                <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                            </a>
+
+                            <div class="nav__dropdown-collapse">
+                                <div class="nav__dropdown-content">
+                                    <a href="#" class="nav__dropdown-item">Cubiertas</a>
+                                    <a href="#" class="nav__dropdown-item">Historial</a>
+                                    <a href="#" class="nav__dropdown-item">Stock</a>
+                                    <a href="#" class="nav__dropdown-item">Numeración</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-compass nav__icon'></i>
+                            <span class="nav__name">Dominios</span>
+                        </a>
+
+                        <div class="nav__dropdown">
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-bus nav__icon'></i>
+                                <span class="nav__name">Partes</span>
+                                <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                            </a>
+
+                            <div class="nav__dropdown-collapse">
+                                <div class="nav__dropdown-content">
+                                    <a href="#" class="nav__dropdown-item">Camión</a>
+                                    <a href="#" class="nav__dropdown-item">Impresiones</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nav__dropdown">
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-wrench nav__icon'></i>
+                                <span class="nav__name">Servicios</span>
+                                <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                            </a>
+
+                            <div class="nav__dropdown-collapse">
+                                <div class="nav__dropdown-content">
+                                    <a href="#" class="nav__dropdown-item">De Cubiertas</a>
+                                    <a href="#" class="nav__dropdown-item">De Dominios</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nav__dropdown">
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-user nav__icon'></i>
+                                <span class="nav__name">Usuarios</span>
+                                <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                            </a>
+
+                            <div class="nav__dropdown-collapse">
+                                <div class="nav__dropdown-content">
+                                    <a href="#" class="nav__dropdown-item">Usuarios</a>
+                                    <a href="#" class="nav__dropdown-item">Roles</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nav__dropdown">
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-data nav__icon'></i>
+                                <span class="nav__name">Carga de Datos</span>
+                                <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                            </a>
+
+                            <div class="nav__dropdown-collapse">
+                                <div class="nav__dropdown-content">
+                                    <a href="#" class="nav__dropdown-item">Choferes</a>
+                                    <a href="#" class="nav__dropdown-item">Clientes</a>
+                                    <a href="#" class="nav__dropdown-item">Cubiertas</a>
+                                    <div class="nav__dropdown">
+                                        <a href="#" class="nav__link">
+                                            <span class="nav__name">Cubiertas</span>
+                                            <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                        </a>
+
+                                        <div class="nav__dropdown-collapse">
+                                            <div class="nav__dropdown-content">
+                                                <a href="#" class="nav__dropdown-item">Diseño</a>
+                                                <a href="#" class="nav__dropdown-item">Llanta</a>
+                                                <a href="#" class="nav__dropdown-item">Marca</a>
+                                                <a href="#" class="nav__dropdown-item">Medida</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="nav__dropdown-item">Depósitos</a>
+                                    <a href="#" class="nav__dropdown-item">Empresa</a>
+                                    <a href="#" class="nav__dropdown-item">Informe técnico</a>
+                                    <a href="#" class="nav__dropdown-item">Operarios</a>
+                                    <a href="#" class="nav__dropdown-item">Tipo de Mov</a>
+                                    <a href="#" class="nav__dropdown-item">Tipo de Serv</a>
+                                    <a href="#" class="nav__dropdown-item">Ubic depósito</a>
+                                    <a href="#" class="nav__dropdown-item">Ubic dominio</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--- CONTENTS --->
+    <main>
+        <section>
+            <!-- MAIN TITLE -->
+            <div class="main__title">
+                <img src="img/hello.svg" alt="" />
+                <div class="main__greeting">
+                    <h1>¡HOLA!</h1>
+                    <p>Bienvenidos al Control de Flota de CasaLeconte</p>
+                </div>
+            </div>
+
+            <!-- MAIN CARDS -->
+            <div class="main__cards">
+                <a href="#">
+                    <div class="card">
+                        <i class='bx bx-cabinet nav__icon__card'></i>
+                        <div class="card_inner">
+                            <p class="text-primary-p">Historial de Movimientos</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="card">
+                        <i class='bx bx-bus nav__icon__card'></i>
+                        <div class="card_inner">
+                            <p class="text-primary-p">Movimiento en Camión</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="card">
+                        <i class='bx bx-transfer nav__icon__card'></i>
+                        <div class="card_inner">
+                            <p class="text-primary-p">Movimiento en Stock</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="card">
+                        <i class='bx bx-list-check nav__icon__card'></i>
+                        <div class="card_inner">
+                            <p class="text-primary-p">Descargar Stock</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!--- TABLE´S CONTENT --->
+
+    <div class="main__card__table">
+        <!---TABLE´S PARTS PRINT--->
+
+        <div class="card__table">
+            <div class="table__header">
+                <div class="title__filter">
+                    <div class="icons__impresiones">
+                        <i class='bx bx-import nav__icon__card'></i>
+                        <p>Impresiones de Partes</p>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Filtros</label>
+                    </div>
+                </div>
+                <div class="row d-flex">
+                    <div class="dropdown">
+                        <span>Operario</span>
+                        <select class="form-select">
+                            <option selected>Elegir..</option>
+                            <option value="1">OP1</option>
+                            <option value="2">OP2</option>
+                            <option value="3">OP2</option>
+                        </select>
+                    </div>
+                    <div class="dropdown">
+                        <span>Clientes</span>
+                        <select class="form-select">
+                            <option selected>Elegir..</option>
+                            <option value="1">Daniel</option>
+                            <option value="2">Gisela</option>
+                            <option value="3">Valeria</option>
+                        </select>
+                    </div>
+                    <div class="dropdown">
+                        <span>Dominio</span>
+                        <input class="form-control" type="text" placeholder="Ej: XXX 000">
+                    </div>
+                    <div class="dropdown">
+                        <span>Fecha</span>
+                        <div class="fechas">
+                            <input class="form-control" type="text" placeholder="Desde"><i class='bx bx-calendar'></i>
+                            <input class="form-control" type="text" placeholder="Hasta"><i class='bx bxs-calendar' ></i>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <span> Cargados </span>
+                        <select class="form-select">
+                            <option value="10" selected="selected">TODOS</option>
+                            <option value="25">Cargado</option>
+                            <option value="50">No Cargado</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="div__table">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th colspan="6">
+                                <div class="table__var__header">
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        10
+                                        </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">10</a></li>
+                                                <li><a class="dropdown-item" href="#">50</a></li>
+                                                <li><a class="dropdown-item" href="#">10</a></li>
+                                            </ul>
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class='bx bx-show-alt'></i>
+                                        </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">Ordenar por Fecha</a></li>
+                                                <li><a class="dropdown-item" href="#">Ordenar por Dominio</a></li>
+                                                <li><a class="dropdown-item" href="#">Ordenar por Cliente</a></li>
+                                            </ul>
+                                    </div>
+                                    <div class="search__filter">
+                                        <div class="search"> 
+                                            <i class='bx bx-search'></i> 
+                                            <input type="text" class="form-control" placeholder="Buscar...">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn btn-outline-primary"><i class='bx bxs-file-pdf' ></i>PDF</button>
+                                        <button type="button" class="btn btn-outline-primary">Agregar<i class='bx bx-plus'></i></button>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="col" class="first__column">Cargado</th>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Dominio</th>
+                            <th scope="col">Cliente</th>
+                            <th scope="col">Operario</th>
+                            <th class="td__icon__delete" scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row"><input type="checkbox"></td>
+                            <td>01/05/2021</td>
+                            <td>XXX 001</td>
+                            <td>Gisela</td>
+                            <td>OP1</td>
+                            <td class="td__icon__delete"><i class='bx bxs-trash'></i></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><input type="checkbox" checked></td>
+                            <td>01/05/2021</td>
+                            <td>XXX 002</td>
+                            <td>Daniel</td>
+                            <td>OP2</td>
+                            <td class="td__icon__delete"><i class='bx bxs-trash'></i></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><input type="checkbox" checked></td>
+                            <td>01/05/2021</td>
+                            <td>XXX 003</td>
+                            <td>Valeria</td>
+                            <td>OP5</td>
+                            <td class="td__icon__delete"><i class='bx bxs-trash'></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!--TABLE´S TIRE NUMBERING-->
+        <div class="card__table second">
+            <div class="table__header">
+                <div class="title__filter">
+                    <div class="icons__impresiones">
+                        <i class='bx bx-hash nav__icon__card'></i>
+                        <p>Numeración de cubiertas</p>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Filtros</label>
+                    </div>
+                </div>
+                <div class="row d-flex">
+                    <div class="dropdown">
+                        <span>Clientes</span>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Elegir..</option>
+                            <option value="1">Daniel</option>
+                            <option value="2">Gisela</option>
+                            <option value="3">Valeria</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="div__table">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th colspan="2">
+                                <div class="table__var__header table__numeracion">
+                                    <div class="dropdown">
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        10
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">10</a></li>
+                                            <li><a class="dropdown-item" href="#">50</a></li>
+                                            <li><a class="dropdown-item" href="#">100</a></li>
+                                        </ul>
+                                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class='bx bx-show-alt'></i>
+                                        </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#">Ordenar por Fecha</a></li>
+                                                <li><a class="dropdown-item" href="#">Ordenar por Dominio</a></li>
+                                                <li><a class="dropdown-item" href="#">Ordenar por Cliente</a></li>
+                                            </ul>
+                                    </div>
+                                    <div class="search__filter">
+                                        <div class="search"> 
+                                            <i class='bx bx-search'></i> 
+                                            <input type="text" class="form-control" placeholder="Buscar...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Número de Interno</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">1</td>
+                            <td>0032000706</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">2</td>
+                            <td>0032000706</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">3</td>
+                            <td colspan="2">0032000706</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+
+        <!-- JS -->
+        <script src="js/main.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+</html>
